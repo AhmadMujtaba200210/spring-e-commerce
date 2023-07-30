@@ -4,8 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Home - Shopme Admin </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+
 </head>
 <body>
 <div class="container-fluid">
@@ -17,8 +20,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavBar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="navbar-nav" >
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/users}">Users</a>
                     </li>
